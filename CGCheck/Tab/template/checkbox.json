@@ -1,0 +1,35 @@
+{
+    "SVerticalBox":
+    {
+        "Slots":
+        [
+            {
+                "AutoHeight": true,
+                "SHorizontalBox":
+                {
+                    "Slots":
+                    [
+
+                    ]
+                }
+            },
+            {
+                "Padding":[0,5,0,0],
+                "SBorder":
+                {
+                    "Aka": "box_teamwork",
+                    "Content":
+                    {
+                        "SVerticalBox":
+                        {
+                            "Slots":
+                            [
+            
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

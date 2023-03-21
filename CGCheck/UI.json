@@ -1,0 +1,221 @@
+
+    "SVerticalBox": {
+        "Slots": [
+            {
+                "AutoHeight": true,
+                "Padding": [
+                    0,
+                    2,
+                    0,
+                    0
+                ],
+                "SHorizontalBox": {
+                    "Slots": [
+                        {
+                            "AutoWidth": true,
+                            "VAlign": "Top",
+                            "SButton": {
+                                "Aka": "CheckFrame_status_btn",
+                                "ContentPadding": [
+                                    9,
+                                    4
+                                ],
+                                "ButtonColorAndOpacity": [
+                                    0.24,
+                                    0.24,
+                                    0.24,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "SBorder": {
+                                "Content": {
+                                    "STextBlock": {
+                                        "Font": {
+                                            "Style": "FCoreStyle",
+                                            "StyleName": "DefaultFont.Bold.12"
+                                        },
+                                        "Text": "\u68c0\u67e5Sequence\u5e27\u6570\u662f\u5426\u4e0eteamwork\u4e00\u81f4"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "AutoWidth": true,
+                            "SComboBox": {
+                                "Aka": "CheckFrame_enable_combobox",
+                                "Content": {
+                                    "Text": "ComboBox"
+                                },
+                                "OptionsSource": [
+                                    "\u7981\u6b62",
+                                    "\u542f\u7528"
+                                ],
+                                "OnSelectionChanged": "from CGCheck import util;util.utility.controll_callback('enable_click', 'CheckFrame', %)"
+                            }
+                        },
+                        {
+                            "AutoHeight": true,
+                            "AutoWidth": true,
+                            "Aka": "CheckFrame_info_btn",
+                            "VAlign": "Top",
+                            "SButton": {
+                                "ContentPadding": [
+                                    9,
+                                    4
+                                ],
+                                "OnClick": "from CGControll import cginfo;importlib.reload(cginfo);cginfo.CGInfo.set_all_info(aka_name='CheckFrame')",
+                                "Content": {
+                                    "SBox": {
+                                        "MaxDesiredHeight": 15,
+                                        "MaxDesiredWidth": 13,
+                                        "Content": {
+                                            "SImage": {
+                                                "ImagePath": "Resources/info.png",
+                                                "Aka": "btn_info_image"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "AutoHeight": true,
+                            "AutoWidth": true,
+                            "Aka": "CheckFrame_repair_btn",
+                            "VAlign": "Top",
+                            "SButton": {
+                                "ContentPadding": [
+                                    9,
+                                    4
+                                ],
+                                "OnClick": "from Validation import LevelSequence;importlib.reload(LevelSequence);LevelSequence.checkframe.SequenceFrame.rebuild()",
+                                "Content": {
+                                    "SBox": {
+                                        "MaxDesiredHeight": 15,
+                                        "MaxDesiredWidth": 13,
+                                        "Content": {
+                                            "SImage": {
+                                                "ImagePath": "Resources/tool.png",
+                                                "Aka": "image"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "Aka": "CheckFrame_horizentalbox"
+                }
+            },
+            {
+                "AutoHeight": true,
+                "Padding": [
+                    0,
+                    2,
+                    0,
+                    0
+                ],
+                "SHorizontalBox": {
+                    "Slots": [
+                        {
+                            "AutoWidth": true,
+                            "VAlign": "Top",
+                            "SButton": {
+                                "Aka": "CheckMaterialAbcChannel_status_btn",
+                                "ContentPadding": [
+                                    9,
+                                    4
+                                ],
+                                "ButtonColorAndOpacity": [
+                                    0.24,
+                                    0.24,
+                                    0.24,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "SBorder": {
+                                "Content": {
+                                    "STextBlock": {
+                                        "Font": {
+                                            "Style": "FCoreStyle",
+                                            "StyleName": "DefaultFont.Bold.12"
+                                        },
+                                        "Text": "\u68c0\u67e5\u6bcd\u6750\u8d28\u7403\u7684Abc\u901a\u9053\u662f\u5426\u52fe\u9009"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "AutoWidth": true,
+                            "SComboBox": {
+                                "Aka": "CheckMaterialAbcChannel_enable_combobox",
+                                "Content": {
+                                    "Text": "ComboBox"
+                                },
+                                "OptionsSource": [
+                                    "\u7981\u6b62",
+                                    "\u542f\u7528"
+                                ],
+                                "OnSelectionChanged": "from CGCheck import util;util.utility.controll_callback('enable_click', 'CheckMaterialAbcChannel', %)"
+                            }
+                        },
+                        {
+                            "AutoHeight": true,
+                            "AutoWidth": true,
+                            "Aka": "CheckMaterialAbcChannel_info_btn",
+                            "VAlign": "Top",
+                            "SButton": {
+                                "ContentPadding": [
+                                    9,
+                                    4
+                                ],
+                                "OnClick": "from CGControll import cginfo;importlib.reload(cginfo);cginfo.CGInfo.set_all_info(aka_name='CheckMaterialAbcChannel')",
+                                "Content": {
+                                    "SBox": {
+                                        "MaxDesiredHeight": 15,
+                                        "MaxDesiredWidth": 13,
+                                        "Content": {
+                                            "SImage": {
+                                                "ImagePath": "Resources/info.png",
+                                                "Aka": "btn_info_image"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "AutoHeight": true,
+                            "AutoWidth": true,
+                            "Aka": "CheckMaterialAbcChannel_repair_btn",
+                            "VAlign": "Top",
+                            "SButton": {
+                                "ContentPadding": [
+                                    9,
+                                    4
+                                ],
+                                "OnClick": "from Validation import Material;importlib.reload(Material);Material.MaterialAbcCheck.MaterialAbcChannel.rebuild()",
+                                "Content": {
+                                    "SBox": {
+                                        "MaxDesiredHeight": 15,
+                                        "MaxDesiredWidth": 13,
+                                        "Content": {
+                                            "SImage": {
+                                                "ImagePath": "Resources/tool.png",
+                                                "Aka": "image"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "Aka": "CheckMaterialAbcChannel_horizentalbox"
+                }
+            }
+        ]
+    }

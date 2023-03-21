@@ -1,0 +1,397 @@
+
+    "SVerticalBox": {
+        "Slots": [
+            {
+                "AutoHeight": true,
+                "SHorizontalBox": {
+                    "Slots": [
+                        {
+                            "Padding": [
+                                0,
+                                2,
+                                2,
+                                0
+                            ],
+                            "AutoWidth": true,
+                            "AutoHeight": true,
+                            "SBox": {
+                                "MinDesiredWidth": 60,
+                                "MinDesiredHeight": 25,
+                                "Content": {
+                                    "SBorder": {
+                                        "Content": {
+                                            "SCheckBox": {
+                                                "Aka": "msg_info",
+                                                "Content": {
+                                                    "SBox": {
+                                                        "VAlign": "Center",
+                                                        "Content": {
+                                                            "STextBlock": {
+                                                                "Justification": "Center",
+                                                                "Text": "Info"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "CheckBoxStyle": {
+                                                    "Style": "FCoreStyle",
+                                                    "StyleName": "ToggleButtonCheckbox"
+                                                },
+                                                "IsChecked": true,
+                                                "OnCheckStateChanged": "cgtab.tabback.callback()"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "Padding": [
+                                0,
+                                2,
+                                2,
+                                0
+                            ],
+                            "AutoWidth": true,
+                            "AutoHeight": true,
+                            "SBox": {
+                                "MinDesiredWidth": 60,
+                                "MinDesiredHeight": 25,
+                                "Content": {
+                                    "SBorder": {
+                                        "Content": {
+                                            "SCheckBox": {
+                                                "Aka": "validator_info",
+                                                "Content": {
+                                                    "SBox": {
+                                                        "VAlign": "Center",
+                                                        "Content": {
+                                                            "STextBlock": {
+                                                                "Justification": "Center",
+                                                                "Text": "Validation Info"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "CheckBoxStyle": {
+                                                    "Style": "FCoreStyle",
+                                                    "StyleName": "ToggleButtonCheckbox"
+                                                },
+                                                "IsChecked": false,
+                                                "OnCheckStateChanged": "cgtab.tabback.callback()"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Padding": [
+                    0,
+                    5,
+                    0,
+                    0
+                ],
+                "SBorder": {
+                    "Aka": "box_teamwork",
+                    "Content": {
+                        "SVerticalBox": {
+                            "Slots": [
+                                {
+                                    "SBox": {
+                                        "Aka": "msg_info_sbox",
+                                        "Content": {
+                                            "SVerticalBox": {
+                                                "Slots": [
+                                                    {
+                                                        "AutoHeight": true,
+                                                        "SBorder": {
+                                                            "ColorAndOpacity": [
+                                                                0,
+                                                                0.5,
+                                                                0.5,
+                                                                1
+                                                            ],
+                                                            "BorderImage": {
+                                                                "Style": "FEditorStyle",
+                                                                "Brush": "PropertyWindow.EditConstColor"
+                                                            },
+                                                            "Content": {
+                                                                "SHorizontalBox": {
+                                                                    "Slots": [
+                                                                        {
+                                                                            "AutoWidth": true,
+                                                                            "SBox": {
+                                                                                "MinDesiredHeight": 1,
+                                                                                "MinDesiredWidth": 1,
+                                                                                "MaxDesiredHeight": 46,
+                                                                                "MaxDesiredWidth": 46,
+                                                                                "Content": {
+                                                                                    "SImage": {
+                                                                                        "ImagePath": "Resources/info.png",
+                                                                                        "Aka": "cg_info_image"
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "VAlign": "Center",
+                                                                            "Padding": [
+                                                                                5,
+                                                                                0,
+                                                                                0,
+                                                                                0
+                                                                            ],
+                                                                            "STextBlock": {
+                                                                                "Text": "\u4fe1\u606f\u53cd\u9988",
+                                                                                "Font": {
+                                                                                    "Style": "FEditorStyle",
+                                                                                    "StyleName": "FontAwesome.16"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "AutoHeight": true,
+                                                        "Padding": [
+                                                            0,
+                                                            5,
+                                                            0,
+                                                            5
+                                                        ],
+                                                        "SSeparator": {
+                                                            "Thickness": 3,
+                                                            "Orientation": "Horizontal"
+                                                        }
+                                                    },
+                                                    {
+                                                        "STextBlock": {
+                                                            "Aka": "info_text_edit",
+                                                            "Font": {
+                                                                "Style": "FEditorStyle",
+                                                                "StyleName": "FontAwesome.16"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "Visibility": "Visible"
+                                    }
+                                },
+                                {
+                                    "SBox": {
+                                        "Aka": "validator_info_sbox",
+                                        "Content": {
+                                            "SVerticalBox": {
+                                                "Slots": [
+                                                    {
+                                                        "AutoHeight": true,
+                                                        "SBorder": {
+                                                            "ColorAndOpacity": [
+                                                                0,
+                                                                0.5,
+                                                                0.5,
+                                                                1
+                                                            ],
+                                                            "BorderImage": {
+                                                                "Style": "FEditorStyle",
+                                                                "Brush": "PropertyWindow.EditConstColor"
+                                                            },
+                                                            "Content": {
+                                                                "SHorizontalBox": {
+                                                                    "Slots": [
+                                                                        {
+                                                                            "AutoWidth": true,
+                                                                            "SBox": {
+                                                                                "MinDesiredHeight": 1,
+                                                                                "MinDesiredWidth": 1,
+                                                                                "MaxDesiredHeight": 46,
+                                                                                "MaxDesiredWidth": 46,
+                                                                                "Content": {
+                                                                                    "SImage": {
+                                                                                        "ImagePath": "Resources/plugininfo.png",
+                                                                                        "Aka": "cg_plugin_image"
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "VAlign": "Center",
+                                                                            "Padding": [
+                                                                                5,
+                                                                                0,
+                                                                                0,
+                                                                                0
+                                                                            ],
+                                                                            "STextBlock": {
+                                                                                "Text": "\u68c0\u67e5\u9879\u4fe1\u606f",
+                                                                                "Font": {
+                                                                                    "Style": "FEditorStyle",
+                                                                                    "StyleName": "FontAwesome.16"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "AutoHeight": true,
+                                                        "Padding": [
+                                                            0,
+                                                            5,
+                                                            0,
+                                                            5
+                                                        ],
+                                                        "SSeparator": {
+                                                            "Thickness": 3,
+                                                            "Orientation": "Horizontal"
+                                                        }
+                                                    },
+                                                    {
+                                                        "SScrollBox": {
+                                                            "Orientation": "Horizontal",
+                                                            "Slots": [
+                                                                {
+                                                                    "SHorizontalBox": {
+                                                                        "Slots": [
+                                                                            {
+                                                                                "Padding": [
+                                                                                    10,
+                                                                                    0,
+                                                                                    0,
+                                                                                    0
+                                                                                ],
+                                                                                "AutoWidth": true,
+                                                                                "SVerticalBox": {
+                                                                                    "Slots": [
+                                                                                        {
+                                                                                            "AutoHeight": true,
+                                                                                            "STextBlock": {
+                                                                                                "Text": "filename: ",
+                                                                                                "Font": {
+                                                                                                    "Style": "FEditorStyle",
+                                                                                                    "StyleName": "FontAwesome.16"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "AutoHeight": true,
+                                                                                            "HAlign": "Right",
+                                                                                            "STextBlock": {
+                                                                                                "Text": "path: ",
+                                                                                                "Font": {
+                                                                                                    "Style": "FEditorStyle",
+                                                                                                    "StyleName": "FontAwesome.16"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "AutoHeight": true,
+                                                                                            "HAlign": "Right",
+                                                                                            "STextBlock": {
+                                                                                                "Text": "owner: ",
+                                                                                                "Font": {
+                                                                                                    "Style": "FEditorStyle",
+                                                                                                    "StyleName": "FontAwesome.16"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "AutoHeight": true,
+                                                                                            "HAlign": "Right",
+                                                                                            "STextBlock": {
+                                                                                                "Text": "families: ",
+                                                                                                "Font": {
+                                                                                                    "Style": "FEditorStyle",
+                                                                                                    "StyleName": "FontAwesome.16"
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "Padding": [
+                                                                                    10,
+                                                                                    0,
+                                                                                    0,
+                                                                                    0
+                                                                                ],
+                                                                                "SVerticalBox": {
+                                                                                    "Slots": [
+                                                                                        {
+                                                                                            "AutoHeight": true,
+                                                                                            "STextBlock": {
+                                                                                                "Aka": "validation_filename",
+                                                                                                "Text": "",
+                                                                                                "Font": {
+                                                                                                    "Style": "FEditorStyle",
+                                                                                                    "StyleName": "FontAwesome.16"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "AutoHeight": true,
+                                                                                            "STextBlock": {
+                                                                                                "Aka": "validation_path",
+                                                                                                "Text": "",
+                                                                                                "Font": {
+                                                                                                    "Style": "FEditorStyle",
+                                                                                                    "StyleName": "FontAwesome.16"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "AutoHeight": true,
+                                                                                            "STextBlock": {
+                                                                                                "Aka": "validation_owner",
+                                                                                                "Text": "",
+                                                                                                "Font": {
+                                                                                                    "Style": "FEditorStyle",
+                                                                                                    "StyleName": "FontAwesome.16"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "AutoHeight": true,
+                                                                                            "STextBlock": {
+                                                                                                "Aka": "validation_families",
+                                                                                                "Text": "",
+                                                                                                "Font": {
+                                                                                                    "Style": "FEditorStyle",
+                                                                                                    "StyleName": "FontAwesome.16"
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "Visibility": "Collapsed"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    }

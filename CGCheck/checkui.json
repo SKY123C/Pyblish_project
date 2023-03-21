@@ -1,0 +1,149 @@
+{
+    "ChameleonData": "",
+    "TabLabel": "Pyblish",
+
+    "InitPyCmd": "import importlib;from CGCheck import callback, checkdata;importlib.reload(callback);callback.callback_init()",
+    "InitTabSize": [1000, 600],
+    "InitTabPosition": [500, 200],
+
+    "Root":
+    {
+        "SBox":
+        {
+            "Content":
+            {
+                "SSplitter":{
+                    "Orientation": "Horizontal",
+                    "Slots":
+                    [
+                        {
+                            "Value": 0.5,
+                            "SBorder":
+                            {
+                                "Content":{
+                                    "SVerticalBox":
+                                    {
+                                        "Slots":
+                                        [
+                                            {
+                                                "AutoHeight": true,
+                                                "SHeader": 
+                                                {
+                                                    "Content":
+                                                    {
+                                                        "STextBlock":
+                                                        {
+                                                            "Text": "资产对象",
+                                                            "ShadowOffset": [1,1],
+                                                            "ShadowColorAndOpacity": [0, 0, 0, 1]
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "SListView":
+                                                {
+                                                    "Aka": "listview",
+                                                    "ItemHeight": 10,
+                                                    "OnSelectionChanged": "from util import utility;importlib.reload(utility);utility.controll_callback('listclick', %Item)",
+                                                    "OnMouseButtonDoubleClick": "from util import utility;importlib.reload(utility);utility.controll_callback('listdclick', %Item)",
+                                                    "RichText": true,
+                                                    "ExternalJson": "Source.json"
+
+                                                }
+                                            },
+                                            {
+                                                "AutoHeight": true,
+                                                "VAlign": "Bottom",
+                                                "SHorizontalBox":
+                                                {
+                                                    "Slots":
+                                                    [
+                                                        {
+                                                            "SButton":
+                                                            {
+                                                                "Text": "检查",
+                                                                "HAlign": "Center",
+                                                                "OnClick": "from CGCheck import publish;import importlib;importlib.reload(publish);publish.publish();"
+                                                            }
+                                                        },
+                                                        {
+                                                            "SButton":
+                                                            {
+                                                                "Text": "全部修复",
+                                                                "HAlign": "Center",
+                                                                "OnClick": "from CGCheck import repair;import importlib;importlib.reload(repair);repair.repair()"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+
+                                            }
+                                        ]
+                                    }
+
+
+
+                                }
+                            }
+                        },
+                        {
+                            "Value": 0.5,
+                            "SVerticalBox":
+                            {
+                                "Slots":
+                                [
+                                    {
+                                        "AutoHeight": true,
+                                        
+                                        "SBorder":
+                                        {
+                                            "Content":
+                                            {
+                                                "SScrollBox":
+                                                {
+                                                    "Slots":
+                                                    [
+                                                        {
+                                                            "SVerticalBox":
+                                                            {
+                                                                "Slots":
+                                                                [
+                                                                    {
+                                                                        "AutoHeight": true,
+                                                                        "SHeader": 
+                                                                        {
+                                                                            "Content":
+                                                                            {
+                                                                                "STextBlock":
+                                                                                {
+                                                                                    "Text": "检查项列表",
+                                                                                    "ShadowOffset": [1,1],
+                                                                                    "ShadowColorAndOpacity": [0, 0, 0, 1]
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "ExternalJson": "UI.json"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "ExternalJson": "Tab/tab.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "Padding": [0,2,2,0],
+    "AutoWidth": true,
+    "AutoHeight": true, 
+    "SBox":
+    {
+        "MinDesiredWidth": 60,
+        "MinDesiredHeight": 25,
+        "Content":
+        {
+            "SBorder":
+                    {
+                        "Content":
+                        {
+                            "SCheckBox":
+                            {
+                                "Aka": "%s",
+                                "Content":
+                                {
+                                    "SBox":
+                                    {
+                                        "VAlign": "Center",
+                                        "Content":
+                                        {
+                                            "STextBlock":
+                                            {
+                                                
+                                                "Justification": "Center",
+                                                "Text": "%s"
+                                            }
+                                        }
+                                    }
+                                },
+                                "CheckBoxStyle": 
+                                {
+                                    "Style": "FCoreStyle",
+                                    "StyleName": "ToggleButtonCheckbox"
+                                }
+                            
+                            }
+                        }
+                    }
+        }
+    }
+    
+}

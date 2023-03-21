@@ -1,0 +1,81 @@
+{
+    "SVerticalBox":
+    {
+        "Slots":
+        [
+            {
+                "AutoHeight": true,
+                "SBorder":
+                {
+
+                    "ColorAndOpacity": [0,0.5,0.5,1],
+                    "BorderImage": {
+                        "Style": "FEditorStyle",
+                        "Brush": "PropertyWindow.EditConstColor"
+                    },
+                    "Content":
+                    {
+                        
+                        "SHorizontalBox":
+                        {
+                            "Slots":
+                            [
+                                {
+                                    "AutoWidth": true,
+                                    "SBox": 
+                                    {
+                                        "MinDesiredHeight": 1,
+                                        "MinDesiredWidth": 1,
+                                        "MaxDesiredHeight": 46,
+                                        "MaxDesiredWidth": 46,
+        
+                                        "Content": {
+                                            "SImage": {
+                                                "ImagePath": "Resources/info.png",
+                                                "Aka": "cg_info_image"
+                                            }
+                                        }
+                                    }
+        
+                                },
+                                {
+                                    "VAlign": "Center",
+                                    "Padding": [5,0,0,0],
+                                    "STextBlock":
+                                    {
+                                        "Text": "信息反馈",
+                                        "Font": {
+                                            "Style": "FEditorStyle",
+                                            "StyleName": "FontAwesome.16"
+                                        }
+                                        
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+
+            },
+            {
+                "AutoHeight": true,
+                "Padding": [0, 5, 0, 5],
+                "SSeparator":
+                {
+                    "Thickness":3,
+                    "Orientation": "Horizontal"
+                }
+            },
+            {
+                "STextBlock":
+                {
+                    "Aka": "info_text_edit",
+                    "Font": {
+                        "Style": "FEditorStyle",
+                        "StyleName": "FontAwesome.16"
+                    }
+                }
+            }
+        ]
+    }
+}

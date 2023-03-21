@@ -1,0 +1,109 @@
+{
+    "AutoHeight": true,
+    "Padding": [0,2,0,0],
+    "SHorizontalBox":
+    {
+        "Slots":
+        [
+            {
+                "AutoWidth": true,
+                "VAlign": "Top",
+
+                "SButton":
+                {
+                    "Aka": "%s_status_btn",
+                    "ContentPadding": [9,4],
+                    "ButtonColorAndOpacity":[0.24,0.24,0.24,1]
+                }
+            },
+            {
+                "SBorder":
+                {
+
+                    "Content":
+                    {
+                        "STextBlock":
+                        {
+                            "Font": {
+                                "Style": "FCoreStyle",
+                                "StyleName": "DefaultFont.Bold.12"
+                            },
+                            "Text": "%s"
+                        }
+                        
+                    }
+                }
+            },
+            {
+                "AutoWidth": true,
+                "SComboBox": {
+                    "Aka": "%s_enable_combobox",
+                    "Content": {
+                        "Text": "ComboBox"
+                    },
+                    "OptionsSource": [
+                        "禁止",
+                        "启用"
+                    ],
+                    "OnSelectionChanged": "%s"
+                }
+            },
+            {
+                "AutoHeight":true,
+                "AutoWidth":true,
+                "Aka": "%s_info_btn",
+                "VAlign": "Top",
+                "SButton":
+                {
+                    "ContentPadding": [9,4],
+                    "OnClick": "%s",
+                    "Content":
+                    {
+                        "SBox":
+                        {
+                            "MaxDesiredHeight": 15,
+                            "MaxDesiredWidth": 13,
+                            "Content":
+                            {
+                                "SImage":
+                                {
+                                    "ImagePath": "Resources/info.png",
+                                    "Aka": "btn_info_image"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "AutoHeight":true,
+                "AutoWidth":true,
+                "Aka": "%s_repair_btn",
+                "VAlign": "Top",
+                "SButton":
+                {
+                    "ContentPadding": [9,4],
+                    "OnClick": "%s",
+                    "Content":
+                    {
+                        "SBox":
+                        {
+                            "MaxDesiredHeight": 15,
+                            "MaxDesiredWidth": 13,
+                            "Content":
+                            {
+                                "SImage":
+                                {
+                                    "ImagePath": "Resources/tool.png",
+                                    "Aka": "image"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        ],
+        "Aka": "%s_horizentalbox"
+    }
+}
